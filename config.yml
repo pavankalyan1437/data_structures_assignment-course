@@ -1,0 +1,16 @@
+title: Data_structures_Assignment
+description: To share the data structures assignment
+template:
+  repo: data_structures_assignment-template
+  name: data_structures_assignment
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
